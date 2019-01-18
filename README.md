@@ -1,4 +1,6 @@
-# electron
+#
+
+npm install
 
 # develop
 
