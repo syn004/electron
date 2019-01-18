@@ -1,0 +1,33 @@
+{
+  "name": "electron-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=dist --icon=assets/app-icon/mac/teacher.icns --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syn004/electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syn004/electron/issues"
+  },
+  "homepage": "https://github.com/syn004/electron#readme",
+  "dependencies": {
+    "glob": "^7.1.3"
+  },
+  "devDependencies": {
+    "electron": "^3.0.1",
+    "builder": "^4.0.0",
+    "electron-builder": "^20.28.4",
+    "electron-packager": "^12.1.0",
+    "npm-run-all": "^4.0.2"
+  }
+}
